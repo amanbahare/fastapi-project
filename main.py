@@ -45,8 +45,3 @@ def sort_patient(sort_by : str = Query(..., description= "sort by hieght, weight
     sorted_data = sorted(data.values(), key = lambda x: x.get(sort_by, 0), reverse= order_by)
     return sorted_data
  
-
-    # sort_order = True if order == 'desc' else False
-    # sorted_data = sorted(data.values(), key = lambda x: x.get(sort_by, 0), reverse = sort_order)
-
-    # return sorted_data
